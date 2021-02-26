@@ -1,16 +1,16 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce -> https://www.nextjs.org/commerce",
+  "title": "Scuba Diving Gear, Fins, Tanks, Masks & more | Divers Direct - Divers Direct",
+  "titleTemplate": "%s - Divers Direct",
+  "description": "Fast, Free Shipping at the World's Largest Authorized Scuba Gear and Dive Equipment Retailer. Thousands of products in stock and ready to ship. Shop Mares, Atomic, Suunto, Aqua Lung, Scuba Pro, and more!",
   "openGraph": {
     "type": "website",
     "locale": "en_IE",
-    "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce"
+    "url": "https://www.diversdirect.com/",
+    "site_name": "Divers Direct"
   },
   "twitter": {
-    "handle": "@nextjs",
-    "site": "@nextjs",
+    "handle": "@DiversDirect",
+    "site": "@DiversDirect",
     "cardType": "summary_large_image"
   }
 }
