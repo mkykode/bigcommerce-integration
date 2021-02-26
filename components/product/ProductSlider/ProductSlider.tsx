@@ -20,12 +20,13 @@ const ProductSlider: FC = ({ children }) => {
 
   // Stop the history navigation gesture on touch devices
   useEffect(() => {
+    if(!sliderContainerRef.current) return
     const preventNavigation = (event: TouchEvent) => {
       // Center point of the touch area
       const touchXPosition = event.touches[0].pageX
       // Size of the touch area
       const touchXRadius = event.touches[0].radiusX || 0
-      
+
       // We set a threshold (10px) on both sizes of the screen,
       // if the touch area overlaps with the screen edges
       // it's likely to trigger the navigation. We prevent the
@@ -40,6 +41,7 @@ const ProductSlider: FC = ({ children }) => {
       .addEventListener('touchstart', preventNavigation)
 
     return () => {
+      if(!sliderContainerRef.current) return
       sliderContainerRef.current!
       .removeEventListener('touchstart', preventNavigation)
     }
